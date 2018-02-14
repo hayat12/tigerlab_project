@@ -1,0 +1,21 @@
+.navbar-nav{
+    margin-left: 35%;
+}
+@media screen and (max-width: 1200px){
+    .navbar-nav{
+        margin-left: 40%;
+    }
+}
+@media screen and (max-width: 991px){
+    .navbar-expand-lg{
+        height: auto;
+    }
+    .header-image{
+        height: 100px;
+        width: 100px;
+    }
+}
+.header-image{
+    height: 80px;
+    width: 250px;
+}

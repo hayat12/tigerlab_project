@@ -1,0 +1,77 @@
+<div class="page-body">
+<div class="container">
+    <br>
+    <div class="stepwizard">
+            <div class="stepwizard-row">
+                <div class="stepwizard-step">
+                    <button type="button" class="btn btn-circle btn-step1"></button>
+                    <li></li>
+                    <p>GADGET</p>
+                </div>
+                <div class="stepwizard-step">
+                    <button type="button" class="btn btn-circle btn-step2"></button>
+                    <li></li>
+                    <p>YOU</p>
+                </div>
+                <div class="stepwizard-step">
+                    <button type="button" class="btn btn-circle btn-step3"></button>
+                    <li></li>
+                    <p>PURCHASE</p>
+                </div>
+            </div>
+        </div>
+    <br>
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>Please Tell Us About Yourself</h2>
+            </div>
+        </div>
+      <br>
+     <form (ngSubmit) = "Register(frm.value)" #frm = "ngForm">
+  <div class="row">
+    <div class="col-lg-3">
+        <input type="text" name="name" id="" class="form-control" placeholder="Name" ngModel>
+    </div>
+    <div class="col-lg-3">
+        <input type="text" name="username" id="" class="form-control" placeholder="Surname" ngModel>
+    </div>
+  </div><br>
+  <div class="row">
+      <div class="col-lg-3">
+          <input type="email" name="email" id="" class="form-control" placeholder="Email" ngModel>
+      </div>
+      <div class="col-lg-3">
+          <input type="text" name="phone" id="" class="form-control" placeholder="Phone" ngModel>
+      </div>
+    </div><br>
+    <div class="row">
+        <div class="col-lg-3">
+            <input type="text" name="post_code" id="" class="form-control" placeholder="Post Code " ngModel>
+        </div>
+        <div class="col-lg-3">
+            <input type="text" name="address" id="" class="form-control" placeholder="Address" ngModel>
+        </div>
+      </div><br>
+        <div class="row">
+            <div class="col-lg-3 form-group">
+                <input type="text"
+                    placeholder="Date of Birth | DD / MM / YYYY"
+                      class="form-control"
+                      [minDate]="minDate"
+                      [maxDate]="maxDate"
+                      #dp="bsDatepicker"
+                      bsDatepicker [(bsValue)]="bsValue" name="mydate" ngModel>
+            </div>
+          </div><br>
+        <div class="row">
+            <div class="col-lg-4"> 
+                  <button class="btn tiger-btn-next">
+                    <!-- <i class="fa fa-angle-left" aria-hidden="true"></i>   -->
+                    NEXT
+                  </button>
+            </div>
+          </div>
+        </form>
+    </div>
+    <br>
+</div>

@@ -1,0 +1,54 @@
+.container-sub{
+    border-radius: 10px;
+    padding: 0px;
+    background-color:rgba(189, 236, 158, 0.651);
+}
+.pay{
+    background-color: rgb(240, 101, 37);
+}
+.btn-pay-1{
+    padding: 12px;
+    border-radius: 0px;
+    border-radius: 18px 0px 0px 18px;
+}
+.btn-pay-2{
+    padding: 12px;
+    border-radius: 0px;
+    border-radius: 0px 18px 18px 0px;
+}
+@media screen and (max-width: 991px) {
+}
+.item-row table{
+    float: right;
+}
+.item{
+    width: 90px;
+    font-size: 12px;
+    text-align: center;
+    padding: 23px;
+    padding-top:10px;
+    height: 90px;
+    color: white;
+    margin-left: 10px;
+    border-radius: 200px;
+}
+.item-price{
+    background-color:rgb(218, 136, 13);
+}
+.price-calculation{
+    font-size: 12px;
+    border-radius: 12px;
+    padding: 2%;
+    width: 40%;
+    background-color: rgba(221, 223, 124, 0.342);
+}
+.btn-confirmation{
+    color: white;
+    background-color: green;
+}
+.btn-step2{
+    background-color: rgba(60, 104, 197, 0.685);
+}
+.btn-step3{
+    background-color: rgba(60, 104, 197, 0.685);
+}

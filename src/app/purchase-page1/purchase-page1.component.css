@@ -1,0 +1,26 @@
+.tiger-btn-claim{
+    background-color: white;
+    box-shadow: 2px 2px 2px thistle;
+    width: 50px;
+    padding: 10px;
+    border-radius: 12px;
+}
+.btn-rd input[type ='radio']{
+    visibility: hidden;
+    text-align: left;
+}
+.lst-read{
+    font-size: 12px;
+}
+.lst-read .fa-circle{
+    color: rgb(45, 30, 255);
+}
+.btn-step2{
+    background-color: rgba(60, 104, 197, 0.685);
+}
+.btn-step3{
+    background-color: rgba(60, 104, 197, 0.685);
+}
+.btn-agree{
+    border: none;
+}

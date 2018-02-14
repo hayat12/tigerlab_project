@@ -1,0 +1,68 @@
+<div class="page-body">
+<div class="container">
+    <br>
+    <div class="stepwizard">
+            <div class="stepwizard-row">
+                <div class="stepwizard-step">
+                    <button type="button" class="btn btn-circle btn-step1"></button>
+                    <li></li>
+                    <p>GADGET</p>
+                </div>
+                <div class="stepwizard-step">
+                    <button type="button" class="btn btn-circle btn-step2"></button>
+                    <li></li>
+                    <p>YOU</p>
+                </div>
+                <div class="stepwizard-step">
+                    <button type="button" class="btn btn-circle btn-step3"></button>
+                    <li></li>
+                    <p>PURCHASE</p>
+                </div>
+            </div>
+        </div>
+    <br>
+
+    <div class="row item-row">
+            <div class="col-sm-6">
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="item item-price">
+                                        <strong>£99.99</strong>
+                                        <br> or <br>
+                                        <strong>£9.99</strong> <br>
+                                        monthly
+                                </div>
+                            </td>
+                            <td>
+                                <div class="item item-price">
+                                        <strong>£99.99</strong>
+                                        <br>  or <br>
+                                        <strong>£9.99</strong> <br>
+                                        monthly
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+                    
+                </div>
+    </div>
+
+    <!-- <form (ngSubmit) = "DoPayment(frm.value)" #frm = "ngForm"> -->
+      <div class="row">
+            <div class="col-md-6 pay-cell"> 
+                <button (click)="openModalWithComponent({payType:monthly})" class="btn pay btn-pay-1">Pay Monthly 
+                    <!-- <input type="radio" name="PayMethod" value="Monthyly"  ngModel id="">  -->
+                </button> 
+                <button (click)="openModalWithComponent({payType:yearly})" class="btn pay btn-pay-2">Pay Yearly 
+                        <!-- <input type="radio" name="PayMethod" value="Yearly" ngModel  id=""> -->
+                </button>
+            </div>
+        </div>
+      <br>
+    <!-- </form> -->
+</div>
+<br> <br> <br><br> <br> <br> <br> <br>
+<br><br> <br>
+</div>

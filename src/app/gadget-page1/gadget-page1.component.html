@@ -1,0 +1,132 @@
+<div class="page-body">
+<div class="container">
+    <br>
+    <div class="stepwizard">
+            <div class="stepwizard-row">
+                <div class="stepwizard-step">
+                    <button type="button" class="btn btn-circle btn-step1"></button>
+                    <li></li>
+                    <p>GADGET</p>
+                </div>
+                <div class="stepwizard-step btn-li-2">
+                    <button type="button" class="btn btn-circle"></button>
+                    <li></li>
+                    <p>YOU</p>
+                </div>
+                <div class="stepwizard-step btn-li-3">
+                    <button type="button" class="btn btn-circle"></button>
+                    <li></li>
+                    <p>PURCHASE</p>
+                </div>
+            </div>
+    </div>
+    <div class="row select-gadget">
+      <div class="col col-12">
+        <h3>Protect Your Gadget in Seconds</h3>
+        <h6>
+            Select a gadget to get a quote
+        </h6>
+      </div>
+    </div>
+    <div *ngIf = "errorMessage" class="erro-message"><i class="fa fa-times-circle"></i> {{responseErrorMesssage}} field(s) 
+        required </div>
+        <br>
+<form (ngSubmit) = "NextPage(frm.value)" #frm = "ngForm">
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="input-group">
+                <div class="custom-file">
+                        <select class="custom-select" id="inputGroupSelect03" required placeholder="Type" name="type" [(ngModel)] = 'type'>
+                            <option selected>Type</option>
+                            <option value="1">Mobile Phone</option>
+                            <option value="2">Tablet </option>
+                            <option value="3">Laptop</option>
+                        </select>
+                </div>
+                <div class="input-group-append">
+                    <button class="btn my-btn" type="button">
+                            <i class="fa fa-angle-down"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <br> <br><br>
+        <div class="col-lg-3">
+                <div class="input-group">
+                    <div class="custom-file">
+                            <select class="custom-select" id="inputGroupSelect03" required name="make" [(ngModel)]= 'make' >
+                                <option selected>Make</option>
+                                <option value="1">Apple </option>
+                                <option value="2">Samsung</option>
+                                <option value="3">Google</option>
+                            </select>
+                    </div>
+                    <div class="input-group-append">
+                        <button class="btn my-btn" type="button">
+                                <i class="fa fa-angle-down"></i>
+                        </button>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="input-group">
+                <div class="custom-file">
+                        <input type="text"
+                            required
+                            placeholder="Purchase Date"
+                              [minDate]="minDate"
+                              class="custom-select" 
+                              [maxDate]="maxDate"
+                              #dp="bsDatepicker"
+                              bsDatepicker [(bsValue)]="bsValue" name="mydate" ngModel>
+                </div>
+                <div class="input-group-append">
+                    <button class="btn my-btn" type="button">
+                            <i class="fa fa-calendar"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="col-lg-3">
+                <div class="btn-group-rd" id="status" data-toggle="buttons">
+                    <label class="btn btn-default btn-on btn-xs">
+                        <input type="radio" value="new" required  name="rod" ngModel> <span class="rod-text">New </span>
+                    </label>
+                    <label class="btn btn-default btn-off btn-xs ">
+                        <input type="radio" value="refurbished" required name="rod" ngModel> <span class="rod-text">Refurbished </span>
+                    </label>
+                </div>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3"> 
+        <span (click) = "addAnother()" class="btn tiger-btn-add">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+        </span>  Add another gadget? 
+      </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-lg-3"> 
+        <span (click) = "backBtn()" class="back-btn">
+                <i class="fa fa-angle-left"></i>
+        </span>
+            <!-- [disabled] = "!frm.valid" -->
+              <button class="btn tiger-btn-next" >
+                <!-- <i class="fa fa-angle-left" aria-hidden="true"></i>  -->
+                 NEXT
+              </button>
+        </div>
+      </div>
+</form>
+</div>
+
+<div class="nav">
+<br><br><br><br><br><br><br>
+</div>
+
+</div>

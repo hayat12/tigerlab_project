@@ -1,0 +1,85 @@
+/* .home-body{
+    background-image:url('https://wallpaperscraft.com/image/road_sky_marking_nature_84519_1920x1080.jpg');
+} */
+/* ../../assets/photos/header-pic.png */
+
+
+.wizard-progress {
+    list-style: none;
+    list-style-image: none;
+    padding: 0;
+    white-space: nowrap;
+}
+
+.wizard-progress li {
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+.wizard-progress .step-name {
+    display: table-cell;
+    height: 32px;
+    vertical-align: bottom;
+    text-align: center;
+    width: 100%;
+}
+
+.wizard-progress .step-num {
+    font-size: 14px;
+    font-weight: bold;
+    border: 3px solid darkgray;
+    background-color: darkgray;
+    border-radius: 50%;
+    width: 24px;
+    display: inline-block;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.wizard-progress .step-num:after {
+    content: "";
+    display: block;
+    background: darkgray;
+    height: 1px;
+    width: 130%; /* 130px; */
+    position: absolute;
+    bottom: 45px;
+}
+
+.wizard-progress li:last-of-type .step-num:after {
+    display: none;
+}
+
+.wizard-progress .step-done .step-num,
+.wizard-progress .step-active .step-num {
+   border-color: #000;
+   background-color: #000;
+}
+.step-num-cell{
+    background-color: blue;
+    padding: 5px;
+    border-radius: 100px;
+}
+.wizard-progress .step-active .step-name {
+    font-weight: bold;
+}
+
+
+/* wizard with 5 steps */
+
+.wizard-5-steps {
+    width: 750px;
+}
+
+.wizard-5-steps li {
+    margin-right: 6.9%; /* 6.6687%; 50px */
+    width: 13%;  
+}
+
+.wizard-5-steps .step-num:after {
+  left: 62%;
+}
+
+
+

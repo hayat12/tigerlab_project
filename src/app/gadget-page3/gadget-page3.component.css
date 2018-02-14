@@ -1,0 +1,19 @@
+.item{
+    margin-left: 10px;
+    color: white;
+    border-radius: 250px;
+    text-align: center;
+    padding: 15px;
+    width: 65px;
+}
+.selected-items{
+    background-color: rgba(37, 40, 231, 0.815);
+}
+.selected-items-trash{
+    margin-top: 10px;
+    color:black;
+}
+.item-span{
+    margin-left: 10px;
+    margin-top: 10px;
+}

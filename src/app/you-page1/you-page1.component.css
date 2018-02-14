@@ -1,0 +1,45 @@
+
+table{
+    float: right;
+}
+.item{
+    width: 90px;
+    font-size: 12px;
+    text-align: center;
+    padding: 23px;
+    padding-top:10px;
+    height: 90px;
+    color: white;
+    margin-left: 10px;
+    border-radius: 200px;
+}
+.item-price-1{
+    background-color:silver;
+}
+.item-price-2{
+    background-color:  rgb(243, 157, 29)
+}
+.price-calculation{
+    font-size: 12px;
+    border-radius: 12px;
+    padding: 2%;
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.459);
+}
+@media screen and (max-width: 991px) {
+    .price-calculation{
+        width: 100%;
+        padding: 3%;
+        background-color: rgba(252, 252, 252, 0.541);
+    }
+}
+.btn-silver{
+    background-color:#AFA0A0;
+}
+.btn-gold{
+    background-color:#E39F33;
+}
+.btn-step2{
+    background-color: rgba(60, 104, 197, 0.685);
+}
+

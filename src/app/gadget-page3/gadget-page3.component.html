@@ -1,0 +1,103 @@
+<div class="page-body">
+<div class="container">
+    <br>
+    <div class="stepwizard">
+            <div class="stepwizard-row">
+                <div class="stepwizard-step">
+                    <button type="button" class="btn btn-circle btn-step1"></button>
+                    <li></li>
+                    <p>GADGET</p>
+                </div>
+                <div class="stepwizard-step">
+                    <button type="button" class="btn btn-circle"></button>
+                    <li></li>
+                    <p>YOU</p>
+                </div>
+                <div class="stepwizard-step">
+                    <button type="button" class="btn btn-circle"></button>
+                    <li></li>
+                    <p>PURCHASE</p>
+                </div>
+            </div>
+        </div>
+    <br>
+    <table>
+        <tr>
+            <td>
+                <div class="row">
+                    <div class="item selected-items">
+                        <i class="fa fa-mobile fa-2x" aria-hidden="true"></i>
+                    </div>
+                    <span class="item-span">
+                        Apple iPhone 8 <br> Plus 64GB £9.99
+                    </span>
+                    <div class="item selected-items-trash">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+<br>
+
+<form (ngSubmit) = "NextPage(frm.value)" #frm = "ngForm">
+        <div class="row">
+            <div class="col-lg-4 form-group">
+                <select class="form-control" placeholder="somethinf" name="protactType" ([ngModel]) = "new">
+                    <option value="Make">Type</option>
+                    <option value="Make 2">....</option>
+                </select>
+            </div>
+            <div class="col-lg-4 form-group">
+                <select class="form-control" name="Make" ([ngModel]) = "make">
+                    <option value="Make">Make</option>
+                    <option value="Make 2">....</option>
+                </select>
+            </div>
+            <div class="col-lg-4 form-group">
+                <select class="form-control" name="model" ([ngModel]) = "Model/ Value">
+                    <option value="model">Model / Value </option>
+                    <option value="model 1">....</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 form-group">
+                <input type="text"
+                    placeholder="Purches Date | MM / D / YYY"
+                      class="form-control"
+                      [minDate]="minDate"
+                      [maxDate]="maxDate"
+                      #dp="bsDatepicker"
+                      bsDatepicker [(bsValue)]="bsValue" name="mydate" ngModel>
+            </div>
+            <div class="col-lg-4 form-group">
+                <div class="form-group">
+                        <span class="form-control rdo-btn">
+                            <label class="lb lb-1"> New <input type="radio" name="rdo" value="new" required ngModel> </label> |
+                            <label class="lb lb-2"> Refurbished <input type="radio" name="rdo" value="refurbash" required ngModel> </label>
+                            <br>
+                        </span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4"> 
+            <button class="btn tiger-btn-add">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+            </button> Add another gadget? 
+          </div>
+        </div>
+    <br>
+        <div class="row">
+            <div class="col-lg-4"> 
+                  <button class="btn tiger-btn-next">
+                    <!-- <i class="fa fa-angle-left" aria-hidden="true"></i> -->
+                     NEXT
+                  </button>
+            </div>
+          </div>
+    </form>
+    </div>
+    <br>
+</div>

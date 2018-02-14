@@ -1,0 +1,119 @@
+<div class="page-body">
+<div class="container">
+    <br>
+    <div class="stepwizard">
+            <div class="stepwizard-row">
+                <div class="stepwizard-step">
+                    <button type="button" class="btn btn-circle btn-step1"></button>
+                    <li></li>
+                    <p>GADGET</p>
+                </div>
+                <div class="stepwizard-step">
+                    <button type="button" class="btn btn-circle btn-step2"></button>
+                    <li></li>
+                    <p>YOU</p>
+                </div>
+                <div class="stepwizard-step">
+                    <button type="button" class="btn btn-circle btn-step3"></button>
+                    <li></li>
+                    <p>PURCHASE</p>
+                </div>
+            </div>
+        </div>
+    <br>
+        <div class="row">
+            <div class="col-lg-6">
+                <h3>Just A Few More Questions </h3>
+            </div>
+        </div>
+      <br>
+  <div class="row">
+        <div class="col-lg-6">
+            How many claims have you made on gadget insurance or home contents insurance in the past 3 years?
+        </div>
+  </div><br>
+  <form (ngSubmit) = "AnswerQuestion(frm.value)" #frm = "ngForm">
+  <div class="row btn-rd">
+    <div class="col col-lg-1">
+            <div class="btn tiger-btn-claim"> 0
+                <input type="radio" name="claims" value="0" readonly ngModel> 
+            </div>
+    </div>
+    <div class="col col-lg-1">
+            <div class="btn tiger-btn-claim"> 1
+                <input type="radio" name="claims" value="1" readonly ngModel> 
+            </div>
+    </div>
+    <div class="col col-lg-1">
+            <div class="btn tiger-btn-claim"> 2
+                <input type="radio" name="claims" value="2" readonly ngModel> 
+            </div>
+    </div>
+    <div class="col col-lg-1">
+            <div class="btn tiger-btn-claim"> 3+
+                <input type="radio" name="claims" value="3+" readonly ngModel> 
+            </div>
+    </div>
+  </div><br>
+        <div class="row">
+            <div class="col-lg-6">
+                    Protect your gadgets from:
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-lg-3 form-group">
+                <input type="text"
+                    placeholder=" Today "
+                      class="form-control"
+                      [minDate]="minDate"
+                      [maxDate]="maxDate"
+                      #dp="bsDatepicker"
+                      bsDatepicker [(bsValue)]="bsValue" name="mydate" ngModel>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-lg-6">
+               <h6>I have read and understood the following:</h6>
+            </div>
+        </div>
+        <div class="lst-read">
+        <div class="row">
+            <div class="col col-lg-3">
+                <i class="fa fa-circle" aria-hidden="true"></i> sadfj asldfja a lasdfj asld  <br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-lg-3">
+                <i class="fa fa-circle" aria-hidden="true"></i> sadfj asldfja a lasdfj asld  <br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-lg-3">
+                <i class="fa fa-circle" aria-hidden="true"></i> sadfj asldfja a lasdfj asld  <br>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col col-lg-3">
+                <i class="fa fa-circle" aria-hidden="true"></i> sadfj asldfja a lasdfj asld  <br>
+            </div>
+        </div>
+</div>
+<br>
+         <div class="row">
+            <div class="col col-lg-2">
+                    <div class="btn tiger-btn-claim"><input class="btn-agree" type="checkbox" name = "agree" ngModel></div> Agree
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4"> 
+                  <button class="btn tiger-btn-next">
+                    <!-- <i class="fa fa-angle-left" aria-hidden="true"></i>   -->
+                    NEXT
+                  </button>
+            </div>
+          </div>
+    </form>
+    <br>
+    </div>
+</div>

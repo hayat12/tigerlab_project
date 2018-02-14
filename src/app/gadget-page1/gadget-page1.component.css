@@ -1,0 +1,97 @@
+.stepwizard-step P{
+    color: rgba(60, 104, 197, 0.685);
+}
+.back-btn{
+    font-size: 28px;
+}
+.tiger-btn-next{
+    margin-top: -5px;
+    margin-left: 0px;
+}
+@media screen and (max-width: 991px) {
+    .row{
+        margin-top: 25px;
+    }
+    .tiger-btn-next{
+        margin-top: -25px;
+    }
+    .tiger-btn-next{
+        width: 90%;
+        margin-top: -15px;
+        margin-left: 20px;
+    }
+}
+.select-gadget{
+    margin-bottom: 10px;
+}
+.input-group-append{
+    margin-top: -6px;
+    border-radius: 12px 12px 12px 12px;
+    background-color: white;
+    height: 50px;
+}
+.my-btn{
+    border: 1px solid rgb(124, 124, 124);
+    border-radius: 12px 12px 12px 12px;
+}
+.custom-select{
+    border-radius: 12px 12px 0px 12px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid rgb(124, 124, 124);
+    border-radius: 12px 0px 0px 12px;
+}
+
+.btn-group-rd{
+    margin-top: -5px;
+    height: 50px;
+    position: relative;
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid rgb(124, 124, 124);
+}
+.btn-default input[type = 'radio']{
+    visibility: hidden;
+}
+.btn-default.btn-on{
+    width: 50%;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 10px 0px 0px 10px;
+}
+.btn-default.btn-off{
+    background-color: rgba(255, 255, 255, 0);
+    width: 50%;
+    float: right;
+    height: 50px;
+    border-radius: 0px 0px 10px 0px;
+    border-left: 1px solid rgb(0, 0, 0);
+}
+.btn-default.btn-on.active{
+    border-radius: 10px 0px 0px 10px;
+    background-color: rgb(173, 173, 173);
+    color: black
+}
+.btn-default.btn-off.active{
+    border-radius: 0px 10px 10px 0px;
+    height: 50px;
+    float: right;
+    color: black;
+    background-color: rgb(173, 173, 173);
+}
+.erro-message{
+    font-size: 12px;
+    color: red;
+}
+.btn-default.btn{
+    text-align: center;
+    padding-top: .675rem
+}
+
+/* .ng-valid[required], .ng-valid.required  {
+    border-left: 5px solid #42A948;
+  }
+  
+  .ng-invalid:not(form)  {
+    border-left: 5px solid #a94442; 
+  } */
